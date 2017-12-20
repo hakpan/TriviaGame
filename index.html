@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TriviaGame</title>
+
+	<!-- link to CSS Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Shadows+Into+Light" rel="stylesheet">
+
+		<!-- Bootstrap style sheet -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body>
+	
+	<!-- Header -->
+	<div class="display-2">
+		Trivia Time!
+	</div>
+
+	<!-- Container for main content -->
+	<div class="container">
+
+		<!-- This row holds the timer when the game starts -->
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p id="time">Time Remaining:<span id="timer"></span></p>
+			</div>
+		</div>
+		
+		<!-- Instructions div that displays at the start of the game and will be hidden when game starts -->
+		<div class="row" id="instructions">
+			<div class="col-sm-12">
+				<h2><u>Instructions:</u></h2>
+				<p>You have 30 seconds to answer all of the trivia questions. Try to answer all of the questions before the timer is done. If you don't beat the timer the game is over and your points are tallied as is.</p>
+				<br>
+				<h2><u>Ready to play?</u>
+			</div>
+		</div>
+
+			
+		<!--Start game button -->	
+		<div class="row">
+			<div class="col-sm-12">
+				<button type="button" class="btn btn-secondary btn-lg btn-block" id="startGame">Start Game</button>
+			</div>
+		</div>
+
+		<!-- Question Area -->
+   		<div class="form-group text-center">
+            <p>1. What is converted into alcohol during brewing?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Sugar
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Lemon
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Milk
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Water
+                </label>
+            </form>
+
+             <p>2. On average how much honey can 1 bee make?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">1 teaspoon
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">1/2 teaspoon
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">3 cups
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">1/12 teaspoon
+                </label>
+            </form>
+
+             <p>3. How many miles to space?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">1000
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">62
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">2100
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">85
+                </label>
+            </form>
+
+             <p>4. What do you call a group of whales?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Heard
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Crowd
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Family
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Pod
+                </label>
+            </form>
+
+             <p>5. What color do you get when you mix blue and red?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Orange
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Green
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Brown
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Purple
+                </label>
+            </form>
+
+             <p>6. Who created the first Programming Language?</p>
+            <form class="question">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Bill Gates
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Herman Hollerith
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Konrad Zuse
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="optradio" value="wrong">Steve Jobs
+                </label>
+            </form>
+
+        </div>
+
+		<div class="row">
+			<button type="button" class="btn btn-secondary btn-lg btn-block" id="done">Done!</button>
+		</div>
+
+		<div class="row">
+			<button type="button" class="btn btn-secondary btn-lg btn-block" id="playAgain">Play Again!</button>
+		</div>
+  		
+	</div>
+
+	<div class="display-4">
+		<br>
+		By: Heather A.
+	</div>
+
+</body>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Javascript -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!--Link to the JS for Trivia Game -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</html>

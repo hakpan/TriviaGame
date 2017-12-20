@@ -1,0 +1,41 @@
+body {
+  	background-image: url("../images/notebook.jpg");
+  	background-size: cover;
+
+  }
+
+.display-2 {
+	/*background-color: #9CEBFF !important;*/
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.row {
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px;
+}
+
+.btn {
+	background: #FFA138 !important;
+	outline-color: #FFA138 !important;
+	/*the outline is not working*/
+}
+
+.display-4 {
+	/*background-color: #9CEBFF !important;*/
+	font-family: 'Shadows Into Light', cursive;
+	padding-left: 100px;
+}
+
+#done {
+	background: #ADEECC !important;
+	outline-color: #ADEECC !important;
+	/*the outline is not working*/
+}
+
+#time {
+	background: #FFA138 !important;
+}
